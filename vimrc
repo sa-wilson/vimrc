@@ -14,5 +14,5 @@ set shiftwidth=4
 set noexpandtab
 if has('gui_running')
   set guifont=Terminus\ \(TTF\):h12
-  colorscheme zenburn
 endif
+colorscheme zenburn
