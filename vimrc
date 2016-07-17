@@ -1,18 +1,26 @@
-call pathogen#infect()
-
 set nocompatible
-set autoindent
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'altercation/vim-colors-solarized'
+
+call vundle#end()
 filetype plugin indent on
+set autoindent
 set ofu=syntaxcomplete
 set t_Co=256
 set number
-syntax enable
+syn on se title
 set background=dark
 set diffopt+=vertical
-set tabstop=4
-set shiftwidth=4
+set tabstop=8
+set softtabstop=8
+set shiftwidth=8
 set noexpandtab
-if has('gui_running')
-  set guifont=Terminus\ \(TTF\):h12
-endif
-colorscheme zenburn
+colorscheme solarized
