@@ -8,10 +8,15 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" Plugins
+Plugin 'ekalinin/Dockerfile.vim'
+
+" Colourschemes
 Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()
 filetype plugin indent on
+" Vundle abpove here, everything else below
 set autoindent
 set ofu=syntaxcomplete
 set t_Co=256
